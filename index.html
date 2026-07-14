@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tunnel of Tomorrow</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+Welcome to the<br>
+<span>Tunnel of Tomorrow</span>
+</h1>
+
+<p class="opening-quote">
+<i>
+"You become responsible, forever,
+for what you have tamed."
+</i>
+</p>
+
+<div class="editor">
+
+<canvas id="canvas" width="1080" height="1080"></canvas>
+
+<img id="frame"
+src="assets/example.png"
+hidden>
+
+</div>
+
+<div class="controls">
+
+<label class="upload">
+
+Choose Your Photo
+
+<input
+type="file"
+id="upload"
+accept="image/*"
+hidden>
+
+</label>
+
+<div class="slider-group">
+
+<label>Scale</label>
+
+<input
+type="range"
+id="scale"
+min="0.5"
+max="3"
+step="0.01"
+value="1">
+
+</div>
+
+<div class="slider-group">
+
+<label>Rotate</label>
+
+<input
+type="range"
+id="rotate"
+min="-180"
+max="180"
+step="1"
+value="0">
+
+</div>
+
+<button id="download">
+Save Your Journey
+</button>
+
+</div>
+
+<div class="closing">
+
+<p>
+
+<i>
+
+"It is only with the heart that one can see rightly.
+What is essential is invisible to the eye."
+
+</i>
+
+</p>
+
+<p class="cta">
+
+May this be the beginning of your own journey
+through the Tunnel of Tomorrow.
+
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
